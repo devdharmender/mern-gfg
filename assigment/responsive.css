@@ -1,0 +1,64 @@
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+    body{overflow-x: hidden;}
+    .logo {display: none;}
+    .login {width: 30vw;}
+    .nav {width: 70vw; display: flex;justify-content: center;align-items: center;justify-content: space-around;}
+    .sidebar-inner{display: none;}
+    .body{width: 100vw;margin: 0; padding: 0;overflow-x: hidden;}
+    .body-content{width: 90vw;padding: 1rem;}
+    .body-content h1{font-size: 1.3rem;}
+    .body-content p{font-size:1rem;}
+    .why-mern-heading{font-size: 1rem;}
+    .li{font-size: .8rem;}
+    .lern-section {flex-direction: column;}
+    .myquli{margin: .5rem;padding: .5rem; border-radius: 1rem;}
+    .footer h3{font-size: .7rem;}
+    .main-section{ display: grid; padding: .5rem;height: auto;}
+    .inner-main-section1{width:94vw; margin-bottom: .5rem;height: 45vh;}
+    .inner-main-section{width:94vw;}
+    .inner-main-section h1{font-size: 1.5rem;}
+    /* contact */
+    .main-con-heading{font-size: 2rem;}
+    .contact-section{height: auto;flex-direction: column;padding: 1rem;gap: 1rem;}
+    .contact-inner {width: 100%;height: auto;}
+    .contact-inner h1{font-size: 2rem; margin-bottom: .5rem;}
+    .contact-inner{padding: .5rem;}
+    .contact-form-section{padding: .5rem; width: 95%;}
+    /* login */
+    .login-form-div{width: 90%;}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+ 
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .main-section{ height: auto;}
+    .inner-main-section1{margin-bottom: .5rem;height: 45vh;}
+    .lern-section {flex-direction: column;height: auto;}
+    .contact-section{height: auto;flex-direction: column;padding: 1rem;gap: 1rem;}
+    .contact-inner {width: 100%;height: auto;}
+    /* login */
+    .login-form-div{width: 70%;}
+
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+ .contact-section{height: auto;flex-direction: column;padding: 1rem;gap: 1rem;}
+    .contact-inner {width: 100%;height: auto;}
+    .contact-form-section input {padding: 1rem;font-size: 2rem;}
+    .contact-form-section label {font-size: 2rem;}
+    /* login */
+    .login-form-div{width: 70%;}
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+ 
+}
