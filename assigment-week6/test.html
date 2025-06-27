@@ -11,141 +11,141 @@
 
 
 		//Q1. Write a function that takes an array of numbers and returns a new array with only the positive numbers using if, for loop, and push.
-		// var mainarr = [1, -3, 4, 0, -2];
-		// var positivearr = [];
-		// for(let i=0; i<=mainarr.length; i++){
-		// 	if(mainarr[i] > 0){
-		// 		positivearr.push(mainarr[i]);
-		// 	}
-		// }
-		// console.log(positivearr);
+		var mainarr = [1, -3, 4, 0, -2];
+		var positivearr = [];
+		for(let i=0; i<=mainarr.length; i++){
+			if(mainarr[i] > 0){
+				positivearr.push(mainarr[i]);
+			}
+		}
+		console.log(positivearr);
 
 		// Q2 Given an array of strings, count how many vowels are present in total.
-			// var a = ["apple", "banana", "grape"];
-			// var count =0;
+			var a = ["apple", "banana", "grape"];
+			var count =0;
 
-			// for(let i=0; i<a.length; i++){
-			// 	var newa=a[i];
-			// 	for(let j=0; j<=newa.length; j++){
-			// 		var output = newa[j]
-			// 		if(output==="a" || output==="e" || output==="i" || output==="o" || output==="u"){
-			// 			count++;
-			// 		}
-			// 	}
-			// }
-			// console.log(count);
+			for(let i=0; i<a.length; i++){
+				var newa=a[i];
+				for(let j=0; j<=newa.length; j++){
+					var output = newa[j]
+					if(output==="a" || output==="e" || output==="i" || output==="o" || output==="u"){
+						count++;
+					}
+				}
+			}
+			console.log(count);
 
 
 		// Q3. Write a program that separates even and odd numbers from an array and stores them in two different arrays.
-		// var maininput = [1, 2, 3, 4, 5, 6];
-		// var evennum = [];
-		// var oddnum = [];
+		var maininput = [1, 2, 3, 4, 5, 6];
+		var evennum = [];
+		var oddnum = [];
 
-		// for(let i =0; i<=maininput.length; i++){
-		// 	if(maininput[i]%2 === 0){
-		// 		evennum.push(maininput[i]);
-		// 	}else{
-		// 		oddnum.push(maininput[i]);
-		// 	}
-		// }
-		//  console.log(`this is an odd number ${oddnum}`);
-		//  console.log(`this is an even number ${evennum}`);
+		for(let i =0; i<=maininput.length; i++){
+			if(maininput[i]%2 === 0){
+				evennum.push(maininput[i]);
+			}else{
+				oddnum.push(maininput[i]);
+			}
+		}
+		 console.log(`this is an odd number ${oddnum}`);
+		 console.log(`this is an even number ${evennum}`);
 		
 
 		// Q4. Write a function to find the second largest number in an array without using built-in sorting.
-		// var num = [2,5,3,8,6,8];
-		// num = [...new Set(num)];
-		// for(let i=1; i<num.length; i++){
-		// 	for(let j=0; j<i; j++){
-		// 		if(num[i] < num[j]){
-		// 			var x = num[i];
-		// 			num[i] = num[j];
-		// 			num[j] = x;
-		// 		}
-		// 	}
-		// }
-		// console.log(num)
-		// console.log(num[num.length-2])
+		var num = [2,5,3,8,6,8];
+		num = [...new Set(num)];
+		for(let i=1; i<num.length; i++){
+			for(let j=0; j<i; j++){
+				if(num[i] < num[j]){
+					var x = num[i];
+					num[i] = num[j];
+					num[j] = x;
+				}
+			}
+		}
+		console.log(num)
+		console.log(num[num.length-2])
 
 	
 		// Q5 Manually remove duplicates from an array using a loop and indexOf.
-		// var main = [1, 2, 3, 2, 4, 1];
-		// var a = [];
-		// for(let i= 0; i< main.length; i++){
-		// 	if(a.indexOf(main[i]) === -1){
-		// 		a.push(main[i]);
-		// 	}
-		// }
+		var main = [1, 2, 3, 2, 4, 1];
+		var a = [];
+		for(let i= 0; i< main.length; i++){
+			if(a.indexOf(main[i]) === -1){
+				a.push(main[i]);
+			}
+		}
 
-		// console.log(a);
+		console.log(a);
 
 		// Q6. Take an array of numbers and return both the minimum and maximum values without using Math.min/max.
 		
-		// var num = [12,45,67,32,345,65,78];
+		var num = [12,45,67,32,345,65,78];
 
-		// for(let i=0; i<num.lenght; i++){
-		// 	for(let j=0; j<i; j++){
-		// 		if(num[i] < num[j]){
-		// 			var x = num[i];
-		// 			num[i] = num[j];
-		// 			num[j] = x;
-		// 		}
-		// 	}
-		// }
-		// console.log(num.length)
-		// console.log(`max number is ${num[num.length - 1]}`);
-		// console.log(`min number is ${num[num.length - num.length]}`);
+		for(let i=0; i<num.lenght; i++){
+			for(let j=0; j<i; j++){
+				if(num[i] < num[j]){
+					var x = num[i];
+					num[i] = num[j];
+					num[j] = x;
+				}
+			}
+		}
+		console.log(num.length)
+		console.log(`max number is ${num[num.length - 1]}`);
+		console.log(`min number is ${num[num.length - num.length]}`);
 
 		
 		// Q7. Write a function that checks how many strings in an array are palindromes.
-		// let a = ["madam", "apple", "civic", "pop"];
-		// var count = 0;
+		let a = ["madam", "apple", "civic", "pop"];
+		var count = 0;
 
-		// for(let i=0;i<a.length;i++){
-		// 	let result = a[i].split("").reverse().join("");
-		// 	if(result === a[i]){
-		// 		count+=1;
-		// 	}else{
-		// 		count+=0;
-		// 	}
-		// }
-		// console.log(`total palindromes : ${count}`)
+		for(let i=0;i<a.length;i++){
+			let result = a[i].split("").reverse().join("");
+			if(result === a[i]){
+				count+=1;
+			}else{
+				count+=0;
+			}
+		}
+		console.log(`total palindromes : ${count}`)
 
 		// Q8 Given an array of words, return the longest word and its length
 
-			// var main = ["apple", "banana", "grapefruit"];
-			// var bigword = "";
-			// for(let i=0; i<main.length; i++){
-			// 	if(main[i].length > bigword.length){
-			// 		bigword = main[i];
-			// 	}
-			// }
-			// console.log(bigword, bigword.length);
+			var main = ["apple", "banana", "grapefruit"];
+			var bigword = "";
+			for(let i=0; i<main.length; i++){
+				if(main[i].length > bigword.length){
+					bigword = main[i];
+				}
+			}
+			console.log(bigword, bigword.length);
 
 		// Q9. Take an array of numbers, and return an array of the sum of digits for each number
 
-		// var main = [123, 45, 7];
-		// var arr = [];
-		// for(let i=0; i<main.length; i++){
-		// 	var ab = String(main[i]);
-		// 	var sum = 0;
-		// 	for(let j=0; j< ab.length; j++){
-		// 		var sns = sum += Number(ab[j]);
-		// 	}
-		// 	arr.push(sns);
-		// }
-		// console.log(arr);
+		var main = [123, 45, 7];
+		var arr = [];
+		for(let i=0; i<main.length; i++){
+			var ab = String(main[i]);
+			var sum = 0;
+			for(let j=0; j< ab.length; j++){
+				var sns = sum += Number(ab[j]);
+			}
+			arr.push(sns);
+		}
+		console.log(arr);
 
 
 		// Q10 Reverse an array manually without using .reverse()
-		// var main = [1, 2, 3, 4];
-		// var a = main.length
-		// var b=[];
-		// for(let i=a; i>=0; i--){
-		// 	// console.log(main[i]);
-		// 	b.push(main[i])
-		// }
-		// console.log(b) // need to know why undefine is comming
+		var main = [1, 2, 3, 4];
+		var a = main.length
+		var b=[];
+		for(let i=a; i>=0; i--){
+			// console.log(main[i]);
+			b.push(main[i])
+		}
+		console.log(b) // need to know why undefine is comming
 	</script>
 </body>
 </html>
