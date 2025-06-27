@@ -7,7 +7,7 @@
 </head>
 <body>
 	<script>
-		// Q1,Q3,Q4,Q6,Q7
+		// Q1,Q2,Q3,Q4,Q5,Q6,Q7,Q8,Q9,Q10
 
 
 		//Q1. Write a function that takes an array of numbers and returns a new array with only the positive numbers using if, for loop, and push.
@@ -21,16 +21,20 @@
 		// console.log(positivearr);
 
 		// Q2 Given an array of strings, count how many vowels are present in total.
-			var a = ["apple", "banana", "grape"];
-			
-			var count =0;
-			for(let i=0; i<a.length; i++){
-				var result = a[i].split("").join();
-				if(result==="a" || result==="e" || result==="i" || result==="o" || result==="u"){
-					count++;
-				}
-			}
-			console.log(count);
+			// var a = ["apple", "banana", "grape"];
+			// var count =0;
+
+			// for(let i=0; i<a.length; i++){
+			// 	var newa=a[i];
+			// 	for(let j=0; j<=newa.length; j++){
+			// 		var output = newa[j]
+			// 		if(output==="a" || output==="e" || output==="i" || output==="o" || output==="u"){
+			// 			count++;
+			// 		}
+			// 	}
+			// }
+			// console.log(count);
+
 
 		// Q3. Write a program that separates even and odd numbers from an array and stores them in two different arrays.
 		// var maininput = [1, 2, 3, 4, 5, 6];
@@ -46,6 +50,7 @@
 		// }
 		//  console.log(`this is an odd number ${oddnum}`);
 		//  console.log(`this is an even number ${evennum}`);
+		
 
 		// Q4. Write a function to find the second largest number in an array without using built-in sorting.
 		// var num = [2,5,3,8,6,8];
@@ -62,7 +67,17 @@
 		// console.log(num)
 		// console.log(num[num.length-2])
 
+	
+		// Q5 Manually remove duplicates from an array using a loop and indexOf.
+		// var main = [1, 2, 3, 2, 4, 1];
+		// var a = [];
+		// for(let i= 0; i< main.length; i++){
+		// 	if(a.indexOf(main[i]) === -1){
+		// 		a.push(main[i]);
+		// 	}
+		// }
 
+		// console.log(a);
 
 		// Q6. Take an array of numbers and return both the minimum and maximum values without using Math.min/max.
 		
@@ -94,10 +109,43 @@
 		// 		count+=0;
 		// 	}
 		// }
-		// console.log(count)
+		// console.log(`total palindromes : ${count}`)
+
+		// Q8 Given an array of words, return the longest word and its length
+
+			// var main = ["apple", "banana", "grapefruit"];
+			// var bigword = "";
+			// for(let i=0; i<main.length; i++){
+			// 	if(main[i].length > bigword.length){
+			// 		bigword = main[i];
+			// 	}
+			// }
+			// console.log(bigword, bigword.length);
+
+		// Q9. Take an array of numbers, and return an array of the sum of digits for each number
+
+		// var main = [123, 45, 7];
+		// var arr = [];
+		// for(let i=0; i<main.length; i++){
+		// 	var ab = String(main[i]);
+		// 	var sum = 0;
+		// 	for(let j=0; j< ab.length; j++){
+		// 		var sns = sum += Number(ab[j]);
+		// 	}
+		// 	arr.push(sns);
+		// }
+		// console.log(arr);
 
 
-
+		// Q10 Reverse an array manually without using .reverse()
+		// var main = [1, 2, 3, 4];
+		// var a = main.length
+		// var b=[];
+		// for(let i=a; i>=0; i--){
+		// 	// console.log(main[i]);
+		// 	b.push(main[i])
+		// }
+		// console.log(b) // need to know why undefine is comming
 	</script>
 </body>
 </html>
