@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Closer: </h1>
+    <p>it is a phenomena in js in which inner function is lexically bonded with outer environment</p>
+
+    <h1>first class function : </h1>
+    <p>1) functio which take other function as an argunment (high order function)</p>
+    <p>2) function taken as an argunment (call back)</p>
+    <p>3) function behaving like a variable (function expression)</p>
+
+    <h1 style="text-align: center;">predefine order function</h1>
+    <p>1) map()</p>
+    <p>2) map()</p>
+    <p>3) map()</p>
+    <h4>* return new updated or modified array <b>also</b> work for array iteraction for loop</h4>
+
+    <h2>map()</h2>
+    <p>iterate and modified every element of an array</p>
+    <h2>filter()</h2>
+    <p>iterate and extracts the given element according to given condition</p>
+    <h2>reduce()</h2>
+    <p>itreate and provide single value</p>
+
+    <script>
+        // function outerfun(){
+        //     const name = "dharmender";
+        //     const age = 24;
+
+        //     function innerfunc(){
+        //         console.log(`${name} ${age}`)
+        //     }
+        //     innerfunc();
+        // }
+        // outerfun();
+
+        // chaeking output------------------>
+        // let name = "dharmender";
+        // {
+        //     let name ="goutam";
+        // }
+        // console.log(name);
+
+        // checking variable can re assign with var. in this after function a will not do over showdowing.
+        // function abc(){
+        //     var a = 10;
+        //     console.log(a);
+        // }
+        // function abc(){
+        //     var a = 20;
+        //     console.log(a);
+        // }
+        // abc();
+        // console.log(a); 
+
+        // first class function
+
+        // function sum(a, b) {
+        //     return a + b;
+        // }
+        // function sub(a, b) {
+        //     return a - b;
+        // }
+
+        // function asth(fun, x,y){
+        //     return fun(x, y);
+        // }
+
+        // console.log(asth(sub, 50,40));
+
+        // function hr(salary, type){
+        //     return `${salary} ${type}`;
+        // }
+
+        // function dev(tech_stack){
+        //     return `${tech_stack}`;
+        // }
+        // function ceo(fun,x,y){
+        //     return fun(x, y);
+        // }
+        // console.log(ceo(hr,30000, "intern"));
+        // console.log(ceo(dev, "mern stack developer"))
+
+
+        // predefined order function map();
+        // const arr = [5,3,0,8,4,3,6];
+        // const double = arr.map(element => arr.indexOf(element));
+        // console.log(arr, 'dns');
+        // console.log(double);
+
+        // filter();
+        // const arr1 = [5,3,0,8,4,3,6];
+        // const filerarray = arr1.filter(element%2)
+        // console.log(filerarray);
+
+        // reduce();
+        // const arr2 = [5,3,0,8,4,3,];
+        // const sum = arr2.reduce((acc, curr) => {
+        //     acc += curr;
+        //     return acc;
+        // }, 0);
+        // console.log(sum);
+
+        
+
+    </script>
+</body>
+
+</html>
