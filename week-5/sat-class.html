@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>High order function:</h1>
+    <p>1) function taken another function as an argunment</p>
+    <p>2) function returning another function</p>
+
+    <h1>curring function: </h1>
+    <p>Currying is used in JavaScript to break down complex function calls into smaller, more manageable steps. It transforms a function with multiple arguments into a series of functions, each taking a single argument.</p>
+
+
+    <script>
+        // function abc(a,b,c){
+        //     return a+b+c;
+        // }
+        // console.log(abc(10,20,30));
+
+        // function outerfun(){
+        //     return function innerfun(){
+        //         return "hello dharmender";
+        //     }
+        // }
+        // console.log(outerfun()());
+
+        // curring function: ------------------------------> 
+        // function add(a){
+        //     return function(b){
+        //         return function(c){
+        //             return a+b+c;
+        //         }
+        //     }
+        // }
+        // console.log(add(3)(34)(98));
+
+        //  rest and soread oprator: ---------------------->
+        // const arr = [1,2,3,4,5];
+        // const arr2 = [6,7,8,9,10];
+        // const arr3 = arr.concat(arr2);
+        // console.log(arr3);
+
+        // spread oprator:
+        // const a = [1,2,3,4,5];
+        // const b = [6,7,8,9,10];
+        // const c = [11,12,13,14,15];
+        // const d = [...a, ...b, ...c];
+        // console.log(d);
+
+        // rest oprator:
+        // const a = [1,2,3,4,5];
+        // const b = [6,7,8,9,10];
+        // const c = [11,12,13,14,15];
+        // const d = [16,17,18,19,20];
+        // function add(a,b,c,d,...e){
+        //     const f = a+b+c+d;
+        //     const g = e.map(ele => ele*2);
+        //     return {f,g};
+        // }
+
+        // const newarr = [...a, ...b, ...c, ...d];
+        // console.log(add(...newarr));
+
+        // const obj ={
+        //     name : "Goutam",
+        //     age:25,
+        //     isStudent : true,
+        //     address: {
+        //         room:12,
+        //         city:"noida",
+        //         state:"uttar pradesh",
+
+        //     },
+        //     skill : ["web", "app", "game"],
+        // }
+        // // console.log(obj.name); // adding gender in obj
+        // obj.gender = "male";
+        // // console.log(obj)
+
+        // const upper = obj.skill.map(ele => ele.toUpperCase());
+        // console.log(upper);
+
+
+        // task assign by sir
+        const data = [
+            {
+                name:"dharmender",
+                age: 25,
+            },
+            {
+                name: "goutam",
+                age: 26,
+            },
+            {
+                name: "sachin",
+                age: 27,
+            },
+            {
+                name: "sourabh",
+                age: 28,
+            }
+        ];
+        const newdata = data.map(ele => ele.name);
+        console.log(newdata);
+        const nameup = data.map(ele => ele.name[0].toUpperCase()+ele.name.slice(1).toLowerCase());
+        console.log(nameup);
+
+
+    </script>
+</body>
+</html>
