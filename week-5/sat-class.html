@@ -12,6 +12,8 @@
 
     <h1>curring function: </h1>
     <p>Currying is used in JavaScript to break down complex function calls into smaller, more manageable steps. It transforms a function with multiple arguments into a series of functions, each taking a single argument.</p>
+    
+
 
 
     <script>
@@ -85,30 +87,48 @@
 
 
         // task assign by sir
-        const data = [
-            {
-                name:"dharmender",
-                age: 25,
-            },
-            {
-                name: "goutam",
-                age: 26,
-            },
-            {
-                name: "sachin",
-                age: 27,
-            },
-            {
-                name: "sourabh",
-                age: 28,
-            }
-        ];
-        const newdata = data.map(ele => ele.name);
-        console.log(newdata);
-        const nameup = data.map(ele => ele.name[0].toUpperCase()+ele.name.slice(1).toLowerCase());
-        console.log(nameup);
+        // const data = [
+        //     {
+        //         name:"dharmender",
+        //         age: 25,
+        //     },
+        //     {
+        //         name: "goutam",
+        //         age: 26,
+        //     },
+        //     {
+        //         name: "sachin",
+        //         age: 27,
+        //     },
+        //     {
+        //         name: "sourabh",
+        //         age: 28,
+        //     }
+        // ];
+        // const newdata = data.map(ele => ele.name);
+        // console.log(newdata);
+        // const nameup = data.map(ele => ele.name[0].toUpperCase()+ele.name.slice(1).toLowerCase());
+        // console.log(nameup);
 
 
+        // Object.keys;
+        // Object.values;
+        // Object.entries;
+
+        const object = {
+            name: "dharmender",
+            age: 25,
+            isStudent: true,
+            address: {
+                room: 12,
+                city: "noida",
+                state: "uttar pradesh",
+            },
+            skill: ["web", "app", "game"],
+        }
+        // console.log(Object.keys(object));
+        // console.log(Object.values(object));
+        // console.log(Object.entries(object));
     </script>
 </body>
 </html>
