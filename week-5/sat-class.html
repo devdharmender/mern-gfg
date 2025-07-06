@@ -109,26 +109,76 @@
         // console.log(newdata);
         // const nameup = data.map(ele => ele.name[0].toUpperCase()+ele.name.slice(1).toLowerCase());
         // console.log(nameup);
-
+// --------------------------------------------------------------------------------------------------------------------
 
         // Object.keys;
         // Object.values;
         // Object.entries;
 
-        const object = {
-            name: "dharmender",
-            age: 25,
-            isStudent: true,
-            address: {
-                room: 12,
-                city: "noida",
-                state: "uttar pradesh",
-            },
-            skill: ["web", "app", "game"],
-        }
+        // const object = {
+        //     name: "dharmender",
+        //     age: 25,
+        //     isStudent: true,
+        //     address: {
+        //         room: 12,
+        //         city: "noida",
+        //         state: "uttar pradesh",
+        //     },
+        //     skill: ["web", "app", "game"],
+        // }
         // console.log(Object.keys(object));
         // console.log(Object.values(object));
         // console.log(Object.entries(object));
+
+    // --------------------------------------------------------------------------------------------------------------------
+    // const arr = ["dharmender", "goutam", "sachin", "sourabh"];
+    // const newarr = [];
+    // arr.forEach(ele =>{
+    //     const name = ele[0].toUppercase() + ele.slice(1).toLowerCase();
+    //     newarr.push(name);
+    // })
+    // console.log(newarr)
+    // --------------------------------------------------------------------------------------------------------------------
+    const obj = {
+        name: "dharmender",
+        age: 25,
+        isStudent: true,
+        address: {
+            room: 12,
+            city: "noida",
+            state: "uttar pradesh",
+        },
+        skill: ["web", "app", "game"],
+    }
+    const arr = ["dharmender", "goutam", "sachin", "sourabh"];
+
+    // for(let i of obj){
+    //     console.log(i);
+    // }
+    // for(let i of arr){
+    //     console.log(i);
+    // }
+
+    // for(let i in obj){
+    //     console.log(arr[i]);
+    // }
+    // for(let i in arr){
+    //     console.log(arr[i]);
+    // }
+
+    function findOccurrence(str){
+        const obj = {}
+        const str1 = str.split(' ').join("").split('');
+        for(let num of str1){
+            if(!obj[num]) {
+                obj[num] = 1;
+            }else {
+                obj[num] += 1;
+            }
+        }
+        return obj;
+    }
+    console.log(findOccurrence("dharmender kumar"));
     </script>
 </body>
 </html>
