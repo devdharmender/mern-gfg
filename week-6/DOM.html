@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #calculator{
+            background-color: cyan;
+            padding: 2rem;
+        }
+        .numbs{
+            width: 7%;
+            background-color: black;
+            color: white;
+            padding: 1rem;
+            margin: 1rem;
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1 style="text-align: center;">DOM Manupulation</h1>
+    <h5>Event :- </h5>
+    <p>some function provided which helps to connect "HTML" with "JS".</p> -->
+
+
+    <!-- button click  -->
+    <!-- <button onclick="myfunc()">CALL Me</button> -->
+    <!-- <button id="btn">CALL Me by Id</button> -->
+
+    <!-- event bubbling -->
+
+    <!-- <div id="grantparent"> grant parent
+        <div id="parent"> parent
+            <div id="child"> child</div>
+        </div>
+    </div> -->
+    <!-- <div id="calculator">
+        <div class="numbs">1</div>
+        <div class="numbs">2</div>
+        <div class="numbs">3</div>
+        <div class="numbs">4</div>
+        <div class="numbs">5</div>
+        <div class="numbs">6</div>
+        <div class="numbs">7</div>
+        <div class="numbs">8</div>
+        <div class="numbs">9</div>
+        <div class="numbs">0</div>
+    </div> -->
+
+    <!-- calling calculator -------------------------------------------------------------- >>>>>>>>>>>>> -->
+
+    <!-- <div id="container">
+        <input type="text" id="input">
+        <button id="add">Add</button>
+        <button id="del">Delete</button>
+
+        <div id="todos">
+
+        </div>
+    </div> -->
+
+
+    <script>
+        // const a = prompt("enter first number");
+        // const b = prompt("enter secound number");
+    
+        // const myfunc = () =>console.log(Number(a) + Number(b));
+        // const myfunc = () =>document.write(Number(a) + Number(b));
+
+        // calling button by id -------------------------------------------------------------->>>>>>>>>>>>>
+
+        // const btn = document.getElementById('btn');
+        // btn.addEventListener('click',()=>console.log("hello Dharmender"))
+
+        // event bubbling -------------------------------------------------------------->>>>>>>>>>>>>
+
+        // const grantparent = document.getElementById('grantparent')
+        // const parent = document.getElementById('parent')
+        // const child = document.getElementById('child')
+
+        // grantparent.addEventListener('click', ()=>console.log('grantparent'))
+        // parent.addEventListener('click', ()=>console.log('parent'))
+        // child.addEventListener('click', ()=>console.log('child'))
+
+
+        //  resolution of this
+        // grantparent.addEventListener('click', (event)=>{event.stopPropagation(); console.log('grantparent')})
+        // parent.addEventListener('click', (event)=>{event.stopPropagation(); console.log('parent')})
+        // child.addEventListener('click', (event)=>{event.stopPropagation(); console.log('child')})
+
+
+        // event capturing -------------------------------------------------------------->>>>>>>>>>>>>
+        // grantparent.addEventListener('click', (event)=>{
+        //     // event.stopPropagation();
+        //      console.log('grantparent')},true)
+        // parent.addEventListener('click', (event)=>{
+        //     // event.stopPropagation(); 
+        //     console.log('parent')},true)
+        // child.addEventListener('click', (event)=>{
+        //     // event.stopPropagation(); 
+        //     console.log('child')},true)
+
+            //  resolution of this
+        // grantparent.addEventListener('click', (event)=>{event.stopPropagation(); console.log('grantparent')})
+        // parent.addEventListener('click', (event)=>{event.stopPropagation(); console.log('parent')})
+        // child.addEventListener('click', (event)=>{event.stopPropagation(); console.log('child')})
+
+
+        // calling calculator -------------------------------------------------------------->>>>>>>>>>>>>
+
+        // const calculator = document.getElementById('calculator')
+
+        // calculator.addEventListener('click',(event)=>{
+        //     if(event.target.classList.contains("numbs")){
+        //         console.log(event.target.innerText)
+        //     }else{
+        //         console.log('nothing clicked')
+        //     }
+        // })
+
+        // Todo List -------------------------------------------------------------->>>>>>>>>>>>>
+        // const addtask = document.getElementById('add');
+        // addtask.addEventListener('click', () => {
+        //     const input = document.getElementById('input')
+        //     const todo = document.createElement('li');
+        //     const todos = document.getElementById('todos');
+        //     const content = document.createElement('p');
+        //     const dlt = document.createElement('button');
+        //     dlt.innerText = "delete"
+        //     content.innerText = input.value
+        //     todo.appendChild(content)
+        //     todo.appendChild(dlt)
+        //     todos.appendChild(todo)
+        //     inputTask.value = ""
+        //     dlt.addEventListener('click', ()=>todo.remove())
+            
+        // })
+
+    </script>
+</body>
+</html>
