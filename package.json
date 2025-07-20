@@ -1,0 +1,19 @@
+{
+  "name": "gfg",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devdharmender/mern-gfg.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devdharmender/mern-gfg/issues"
+  },
+  "homepage": "https://github.com/devdharmender/mern-gfg#readme",
+  "description": ""
+}

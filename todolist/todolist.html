@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container border border-danger border-3 p-4 bg-light d-flex justify-content-center align-items-center">
+        <div class="container border border-success p-4 rounded" style="max-width:40vw">
+            <h1 class="text-success text-center border-bottom border-success border-2 my-3">ToDo List</h1>
+            <!-- <form> -->
+                <div class="mb-3">
+                    <label for="addtask" class="form-label">Add task</label>
+                    <input type="text" class="form-control" id="addtask" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="desc" class="form-label">Example textarea</label>
+                    <textarea class="form-control" id="desc" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" id="addtaskbtn">Add list</button>
+                <button type="submit" class="btn btn-danger" id="Deletebtn">Delete All</button>
+            <!-- </form> -->
+            <hr>
+            <div class="container my-5 border border-danger rounded">
+                <h2 class="text-danger text-center border-bottom border-danger border-2 my-3">List</h2>
+                <ul id="todos">
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+        <script>
+            const addtask = document.getElementById('addtaskbtn');
+            const todos = document.getElementById('todos');
+            const alldelete = document.getElementById('Deletebtn');
+            const description = document.getElementById('desc');
+            todos.style.listStyle = 'none';
+            todos.style.padding = '0';
+            todos.style.marginTop = '20px';
+            addtask.addEventListener('click',()=>{
+                const input = document.getElementById('addtask');
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                const todo = document.createElement('li');
+                todo.style.backgroundColor = '#eee';
+                todo.style.marginBottom = '.5rem';
+                todo.style.padding = '.5rem';
+                todo.style.borderRadius = '4px';
+                todo.style.display = 'flex';
+                todo.style.justifyContent = 'space-between';
+                // todo.style.flexDirection = 'column';
+                todo.style.alignItems = 'center';
+
+            const deleteBtn = document.createElement('button');
+            deleteBtn.id = 'dlt-btn';
+                deleteBtn.textContent = 'Delete';
+                deleteBtn.style.backgroundColor = '#dc3545';
+                deleteBtn.style.border = 'none';
+                deleteBtn.style.color = 'white';
+                deleteBtn.style.padding = '5px 10px';
+                deleteBtn.style.borderRadius = '4px';
+                deleteBtn.style.cursor = 'pointer';
+
+            const edt = document.createElement('button');
+            edt.id = 'edt-button';
+                edt.textContent = 'edit';
+                edt.style.backgroundColor = '#008000';
+                edt.style.border = 'none';
+                edt.style.color = 'white';
+                edt.style.padding = '5px 10px';
+                edt.style.borderRadius = '4px';
+                edt.style.cursor = 'pointer';
+
+            const btnGroup = document.createElement('div');
+                btnGroup.style.display = 'flex';
+                btnGroup.style.gap = '0.5rem';
+
+                btnGroup.appendChild(edt);
+                btnGroup.appendChild(deleteBtn);
+
+            const contentside = document.createElement('div');
+                // // contentside.style.display='flex';
+                // contentside.style.gap='0.5rem';
+                contentside.style.marginLeft = '0.5rem'
+            
+            
+            const content = document.createElement('h6');
+            content.style.wordBreak = 'break-word';
+            
+            const desc = document.createElement('p');
+            desc.innerText = description.value
+
+           if(input.value === '' || description.value === ''){
+               alert('empty feild');
+            }else{
+            content.innerText = input.value;
+            todo.appendChild(checkbox);
+            contentside.appendChild(content);
+            contentside.appendChild(desc)
+            todo.appendChild(contentside);
+            todo.appendChild(btnGroup);
+            todos.appendChild(todo);
+            input.value = '';
+            description.value = '';
+           }
+            
+            
+
+            todo.querySelector('#dlt-btn').addEventListener('click', ()=>{
+                todo.remove();
+            })
+
+            alldelete.addEventListener('click',()=>{
+                todo.remove();
+            })
+
+            // not its time to edit function and checkbox disabled
+
+            checkbox.addEventListener('click', () => {
+                todo.disabled = checkbox.checked;
+                checkbox.disabled = true
+                content.style.color = 'gray'
+                desc.style.color = 'gray'
+            });
+
+            edt.addEventListener('click',()=>{
+                checkbox.checked = false;
+                checkbox.disabled = false
+                content.style.color = 'black'
+                desc.style.color = 'black'
+
+            })
+                
+            })
+        </script>
+</body>
+
+</html>
